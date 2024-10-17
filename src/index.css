@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-back {
+    background: url(./assets/images/background.jpg);
+    background-size: cover;
+    color: #e4eff7;
+}
+
+:root {
+    --site-font-size: 16px; /* Default body font size */
+    --site-heading-font-size: 32px; /* Default heading font size */
+}
+
+@media screen and (min-width: 0) and (max-width: 456px) {
+    :root {
+        --site-font-size: 16px; /* Default body font size */
+        --site-heading-font-size: 26px; /* Default heading font size */
+    }
+}
+
+body {
+    font-size: var(--site-font-size);
+}
+
+h1,
+h2,
+h4 {
+    font-size: var(--site-heading-font-size) !important;
+}
+
+/* You can add other elements as needed */
+p,
+span,
+h3,
+a,
+li {
+    font-size: var(--site-font-size) !important;
+}
+
+/* index.css or global styles */
+:root {
+    --bg-color: theme("colors.primary");
+    --text-color: theme("colors.secondary-dark");
+}
+
+.dark {
+    --bg-color: theme("colors.primary-dark");
+    --text-color: theme("colors.secondary-light");
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.bg-carousel {
+    background: black;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsSwiper {
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+}
+
+/* Hide default Swiper arrows */
+.newsSwiper .swiper-button-prev,
+.newsSwiper .swiper-button-next {
+    display: none;
+}
+
+/* Custom navigation buttons centered vertically on the right */
+.custom-prev,
+.custom-next {
+    /* These styles ensure the buttons are vertically centered */
+    top: 50%;
+    right: 10px; /* Adjust this value for spacing from the right */
+    transform: translateY(-50%); /* Center the buttons vertically */
+    z-index: 9999 !important;
+}
+
+.custom-next {
+    top: 60%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.shtor {
+    background: #fe670329;
+}
+
+.new-item {
+    overflow: hidden;
+}
+
+.new-item .img {
+    transition: 300ms;
+}
+
+.new-item:hover .img {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 300ms;
+}
+
+.videoslider .swiper-button-prev,
+.videoslider .swiper-button-next {
+    display: none;
+}

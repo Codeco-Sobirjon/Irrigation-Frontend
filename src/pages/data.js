@@ -1,0 +1,14 @@
+export { default as Home } from "./main/Home";
+export { default as MainCarousel } from "./main/MainCarousel";
+export { default as SubCarousel } from "./main/SubCarousel";
+export { default as News } from "./main/News";
+export { default as Announcement } from "./main/Announcement";
+export { default as Prizes } from "./main/Prizes";
+export { default as Videos } from "./main/Videos";
+export { default as MainDetail } from "./main-detail/main-detail";
+export { default as AllDetail } from "./all-detail/all-detail";
+export { default as Contact } from "./contakt/contakt";
+export { default as TemplateDetail } from "./template-detail/template-detail";
+export { default as NewsDetail } from "./news-detail/news-detail";
+export { default as Allnews } from "./main/AllNews";
+export { default as AllAnnouncement } from "./main/AllAnnouncement";
